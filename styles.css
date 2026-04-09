@@ -1,11 +1,13 @@
 :root {
   --background: #ffffff;
-  --foreground: #141414;
-  --muted: #6f6f6f;
-  --muted-surface: rgba(0, 0, 0, 0.03);
-  --green: #2d5016;
-  --green-hover: #3d6622;
-  --border: rgba(0, 0, 0, 0.1);
+  --foreground: #23233f;
+  --muted: #55607a;
+  --muted-surface: rgba(35, 35, 63, 0.04);
+  --green: #00a79e;
+  --green-hover: #06968e;
+  --navy: #23233f;
+  --navy-soft: #2c2c52;
+  --border: rgba(35, 35, 63, 0.12);
   --section: 7rem;
   --container: 1280px;
   --header-height: 88px;
@@ -50,7 +52,7 @@ button {
   position: sticky;
   top: 0;
   z-index: 50;
-  background: rgba(255, 255, 255, 0.94);
+  background: rgba(255, 255, 255, 0.96);
   backdrop-filter: blur(18px);
   border-bottom: 1px solid var(--border);
 }
@@ -70,18 +72,11 @@ button {
   gap: 10px;
 }
 
-.brand-mark {
-  width: 32px;
-  height: 32px;
-  border-radius: var(--radius-sm);
-  background: var(--green);
-  flex-shrink: 0;
-}
-
-.brand-text {
-  font-size: 1.25rem;
-  font-weight: 600;
-  letter-spacing: -0.02em;
+.brand-logo {
+  height: 64px;
+  width: auto;
+  display: block;
+  object-fit: contain;
 }
 
 .desktop-nav {
@@ -126,7 +121,7 @@ button {
 }
 
 .lang-btn.is-active {
-  background: var(--green);
+  background: var(--navy);
   color: #fff;
 }
 
@@ -162,6 +157,7 @@ button {
   padding: 14px 24px;
   background: var(--green);
   color: #fff;
+  box-shadow: 0 14px 30px rgba(0, 167, 158, 0.18);
 }
 
 .button-primary:hover {
@@ -171,7 +167,7 @@ button {
 .button-light {
   padding: 16px 40px;
   background: #fff;
-  color: var(--green);
+  color: var(--navy);
   font-weight: 600;
 }
 
@@ -195,7 +191,7 @@ button {
 .menu-toggle span {
   width: 22px;
   height: 2px;
-  background: var(--foreground);
+  background: var(--navy);
   margin: 0 auto;
   transition: transform 0.25s ease, opacity 0.25s ease;
 }
@@ -257,7 +253,7 @@ button {
   position: absolute;
   inset: 0;
   z-index: 1;
-  background: linear-gradient(90deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.48), transparent);
+  background: linear-gradient(90deg, rgba(35, 35, 63, 0.92), rgba(35, 35, 63, 0.7), rgba(0, 167, 158, 0.18));
 }
 
 .hero-content {
@@ -268,7 +264,7 @@ button {
 
 .eyebrow {
   margin: 0 0 24px;
-  color: rgba(255, 255, 255, 0.9);
+  color: rgba(255, 255, 255, 0.78);
   font-size: 0.8rem;
   text-transform: uppercase;
   letter-spacing: 0.2em;
@@ -325,7 +321,7 @@ p {
 }
 
 .section-soft {
-  background: rgba(45, 80, 22, 0.03);
+  background: rgba(0, 167, 158, 0.05);
 }
 
 .section-intro {
@@ -413,12 +409,14 @@ p {
   border-radius: var(--radius-sm);
   font-weight: 500;
   color: var(--foreground);
-  transition: border-color 0.25s ease, transform 0.25s ease;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 1), rgba(0, 167, 158, 0.03));
+  transition: border-color 0.25s ease, transform 0.25s ease, box-shadow 0.25s ease;
 }
 
 .pill-card:hover {
   border-color: var(--green);
   transform: scale(1.02);
+  box-shadow: 0 18px 40px rgba(35, 35, 63, 0.08);
 }
 
 .columns-2 {
@@ -486,12 +484,12 @@ p {
 .contact-section {
   position: relative;
   overflow: hidden;
-  background: var(--green);
+  background: linear-gradient(135deg, var(--navy), var(--navy-soft));
   color: #fff;
 }
 
 .founder-section {
-  background: rgba(45, 80, 22, 0.05);
+  background: linear-gradient(180deg, rgba(0, 167, 158, 0.05), rgba(35, 35, 63, 0.03));
 }
 
 .founder-grid {
@@ -510,6 +508,24 @@ p {
 
 .contact-background {
   opacity: 0.1;
+}
+
+.founder-card,
+.media-frame img,
+.pill-card,
+.service-card,
+.border-panel {
+  position: relative;
+}
+
+.founder-card::before {
+  content: "";
+  width: 84px;
+  height: 4px;
+  margin-bottom: 28px;
+  background: var(--green);
+  display: block;
+  border-radius: 999px;
 }
 
 .contact-inner {
@@ -533,10 +549,15 @@ p {
 .site-footer {
   padding: 48px 0;
   border-top: 1px solid var(--border);
+  background: #f8fafc;
 }
 
 .site-footer p {
   font-size: 0.95rem;
+}
+
+.footer-logo {
+  height: 58px;
 }
 
 .reveal {
@@ -595,7 +616,7 @@ p {
   }
 
   .hero-overlay {
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0.72), rgba(0, 0, 0, 0.45));
+    background: linear-gradient(180deg, rgba(35, 35, 63, 0.9), rgba(35, 35, 63, 0.62));
   }
 
   .footer-inner {
@@ -615,6 +636,11 @@ p {
 
   .media-frame img {
     height: 340px;
+  }
+
+  .brand-logo,
+  .footer-logo {
+    height: 48px;
   }
 
   p,
