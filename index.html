@@ -15,35 +15,55 @@
     <header class="site-header">
       <div class="container header-inner">
         <a class="brand" href="#topo" aria-label="GFP GoldForest">
-          </a>
-          <span class="brand-text">GFP GoldForest</span>
+          <img class="brand-logo" src="./logo.png" alt="GFP GoldForest Products logo" />
         </a>
 
-        <nav class="desktop-nav" aria-label="Principal">
-          <a href="#sobre">Sobre</a>
-          <a href="#atuacao">Atuação</a>
-          <a href="#diferenciais">Diferenciais</a>
-          <a class="button button-primary" href="#contato">Fale com a GFP</a>
+        <nav class="desktop-nav" aria-label="Main">
+          <a href="#sobre" data-i18n="nav.about">Sobre</a>
+          <a href="#atuacao" data-i18n="nav.activities">Atuação</a>
+          <a href="#diferenciais" data-i18n="nav.differentials">Diferenciais</a>
+          <a class="button button-primary" href="#contato" data-i18n="nav.contact">Fale com a GFP</a>
         </nav>
 
-        <button
-          class="menu-toggle"
-          type="button"
-          aria-expanded="false"
-          aria-controls="mobile-nav"
-          aria-label="Abrir menu"
-        >
-          <span></span>
-          <span></span>
-          <span></span>
-        </button>
+        <div class="header-actions">
+          <div class="language-switcher" aria-label="Language selector">
+            <button class="lang-btn is-active" type="button" data-lang="pt" aria-label="Português">
+              <span class="flag" aria-hidden="true">BR</span>
+            </button>
+            <button class="lang-btn" type="button" data-lang="en" aria-label="English">
+              <span class="flag" aria-hidden="true">US</span>
+            </button>
+          </div>
+
+          <button
+            class="menu-toggle"
+            type="button"
+            aria-expanded="false"
+            aria-controls="mobile-nav"
+            aria-label="Abrir menu"
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
       </div>
 
       <nav class="mobile-nav" id="mobile-nav" aria-label="Mobile">
-        <a href="#sobre">Sobre</a>
-        <a href="#atuacao">Atuação</a>
-        <a href="#diferenciais">Diferenciais</a>
-        <a class="button button-primary" href="#contato">Fale com a GFP</a>
+        <div class="language-switcher mobile-language-switcher" aria-label="Language selector">
+          <button class="lang-btn is-active" type="button" data-lang="pt" aria-label="Português">
+            <span class="flag" aria-hidden="true">BR</span>
+            <span>PT</span>
+          </button>
+          <button class="lang-btn" type="button" data-lang="en" aria-label="English">
+            <span class="flag" aria-hidden="true">US</span>
+            <span>EN</span>
+          </button>
+        </div>
+        <a href="#sobre" data-i18n="nav.about">Sobre</a>
+        <a href="#atuacao" data-i18n="nav.activities">Atuação</a>
+        <a href="#diferenciais" data-i18n="nav.differentials">Diferenciais</a>
+        <a class="button button-primary" href="#contato" data-i18n="nav.contact">Fale com a GFP</a>
       </nav>
     </header>
 
@@ -54,35 +74,34 @@
           <img
             src="https://images.unsplash.com/photo-1530888700212-757c0e2f13d5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxmb3Jlc3QlMjBwaW5lJTIwdHJlZXMlMjBhZXJpYWwlMjBzdXN0YWluYWJsZXxlbnwxfHx8fDE3NzU3NDI0ODN8MA&ixlib=rb-4.1.0&q=80&w=1080"
             alt="Forest aerial view"
+            data-i18n-attr="alt:images.hero"
           />
         </div>
 
         <div class="container hero-content reveal">
           <p class="eyebrow">Connecting markets. Delivering value.</p>
-          <h1>Excelência Global em Papel, Celulose e Fibras de Madeira</h1>
-          <p class="hero-copy">
-            Conectando o mercado brasileiro aos mais seletos produtores
-            internacionais, com inteligência comercial, solidez e precisão.
+          <h1 data-i18n="hero.title">Excelência Global em Papel, Celulose e Fibras de Madeira</h1>
+          <p class="hero-copy" data-i18n="hero.subtitle">
+            Conectando o mercado brasileiro aos mais seletos produtores internacionais, com inteligência comercial,
+            solidez e precisão.
           </p>
-          <a class="button button-primary button-large" href="#contato">Fale com a GFP</a>
+          <a class="button button-primary button-large" href="#contato" data-i18n="hero.cta">Fale com a GFP</a>
         </div>
       </section>
 
       <section class="section reveal" id="sobre">
         <div class="container section-intro">
-          <h2>Uma atuação pautada por excelência</h2>
+          <h2 data-i18n="about.title">Uma atuação pautada por excelência</h2>
           <div class="text-stack">
-            <p>
-              A GFP GoldForest Negócios e Representações Ltda atua no
-              desenvolvimento e na gestão de negócios no setor de papel, papel
-              cartão, celulose e aparas, com uma abordagem orientada à
-              qualidade, consistência e visão de longo prazo.
+            <p data-i18n="about.p1">
+              A GFP GoldForest Negócios e Representações Ltda atua no desenvolvimento e na gestão de negócios no
+              setor de papel, papel cartão, celulose e aparas, com uma abordagem orientada à qualidade,
+              consistência e visão de longo prazo.
             </p>
-            <p>
-              Com mais de 15 anos de atuação, a empresa consolidou uma presença
-              relevante ao conectar o mercado brasileiro aos principais
-              produtores globais, operando com discrição, confiabilidade e
-              elevado padrão profissional.
+            <p data-i18n="about.p2">
+              Com mais de 15 anos de atuação, a empresa consolidou uma presença relevante ao conectar o mercado
+              brasileiro aos principais produtores globais, operando com discrição, confiabilidade e elevado padrão
+              profissional.
             </p>
           </div>
         </div>
@@ -91,16 +110,14 @@
       <section class="section media-section">
         <div class="container split-grid">
           <div class="reveal">
-            <h2>Experiência que sustenta confiança</h2>
-            <p>
-              A GFP foi estruturada sobre uma base de mais de três décadas de
-              experiência no setor de papel e celulose, incluindo atuação junto
-              a organizações de referência global.
+            <h2 data-i18n="foundation.title">Experiência que sustenta confiança</h2>
+            <p data-i18n="foundation.p1">
+              A GFP foi estruturada sobre uma base de mais de três décadas de experiência no setor de papel e
+              celulose, incluindo atuação junto a organizações de referência global.
             </p>
-            <p>
-              Esse histórico proporciona uma compreensão aprofundada das
-              dinâmicas internacionais do setor, permitindo conduzir operações
-              com precisão, segurança e elevado nível de governança.
+            <p data-i18n="foundation.p2">
+              Esse histórico proporciona uma compreensão aprofundada das dinâmicas internacionais do setor,
+              permitindo conduzir operações com precisão, segurança e elevado nível de governança.
             </p>
           </div>
 
@@ -108,6 +125,7 @@
             <img
               src="https://images.unsplash.com/photo-1758304481023-82acd8a35287?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwyfHxwYXBlciUyMG1pbGwlMjBpbmR1c3RyaWFsJTIwZmFjdG9yeSUyMGFlcmlhbHxlbnwxfHx8fDE3NzU3NDI0ODJ8MA&ixlib=rb-4.1.0&q=80&w=1080"
               alt="Industrial complex aerial view"
+              data-i18n-attr="alt:images.foundation"
             />
           </div>
         </div>
@@ -116,37 +134,37 @@
       <section class="section section-muted" id="atuacao">
         <div class="container">
           <div class="reveal">
-            <h2>Uma atuação abrangente e estratégica</h2>
-            <p class="section-lead">
-              A GFP opera de forma integrada ao longo de toda a cadeia de
-              valor, oferecendo soluções completas e personalizadas:
+            <h2 data-i18n="activities.title">Uma atuação abrangente e estratégica</h2>
+            <p class="section-lead" data-i18n="activities.intro">
+              A GFP opera de forma integrada ao longo de toda a cadeia de valor, oferecendo soluções completas e
+              personalizadas:
             </p>
           </div>
 
           <div class="services-grid">
             <article class="service-card reveal">
-              <h3>Comercialização</h3>
-              <p>Papel, papel cartão, celulose e aparas</p>
+              <h3 data-i18n="activities.cards.0.title">Comercialização</h3>
+              <p data-i18n="activities.cards.0.text">Papel, papel cartão, celulose e aparas</p>
             </article>
             <article class="service-card reveal">
-              <h3>Representação</h3>
-              <p>Produtores internacionais de alto padrão</p>
+              <h3 data-i18n="activities.cards.1.title">Representação</h3>
+              <p data-i18n="activities.cards.1.text">Produtores internacionais de alto padrão</p>
             </article>
             <article class="service-card reveal">
-              <h3>Estruturação Global</h3>
-              <p>Intermediação de operações internacionais</p>
+              <h3 data-i18n="activities.cards.2.title">Estruturação Global</h3>
+              <p data-i18n="activities.cards.2.text">Intermediação de operações internacionais</p>
             </article>
             <article class="service-card reveal">
-              <h3>Relações Comerciais</h3>
-              <p>Desenvolvimento de parcerias de longo prazo</p>
+              <h3 data-i18n="activities.cards.3.title">Relações Comerciais</h3>
+              <p data-i18n="activities.cards.3.text">Desenvolvimento de parcerias de longo prazo</p>
             </article>
             <article class="service-card reveal">
-              <h3>Logística Internacional</h3>
-              <p>Soluções para transporte marítimo</p>
+              <h3 data-i18n="activities.cards.4.title">Logística Internacional</h3>
+              <p data-i18n="activities.cards.4.text">Soluções para transporte marítimo</p>
             </article>
             <article class="service-card reveal">
-              <h3>Soluções Financeiras</h3>
-              <p>Estruturação de financiamento</p>
+              <h3 data-i18n="activities.cards.5.title">Soluções Financeiras</h3>
+              <p data-i18n="activities.cards.5.text">Estruturação de financiamento</p>
             </article>
           </div>
         </div>
@@ -155,20 +173,20 @@
       <section class="section">
         <div class="container">
           <div class="reveal">
-            <h2>Amplitude com curadoria</h2>
-            <p class="section-lead">
-              A GFP detém o mais amplo portfólio de produtos disponíveis para
-              importação direta no mercado brasileiro, resultado de uma
-              curadoria criteriosa e de relações consolidadas com produtores
+            <h2 data-i18n="portfolio.title">Amplitude com curadoria</h2>
+            <p class="section-lead" data-i18n="portfolio.intro">
+              A GFP detém o mais amplo portfólio de produtos disponíveis para importação direta no mercado
+              brasileiro, resultado de uma curadoria criteriosa e de relações consolidadas com produtores
               internacionais.
             </p>
+            <p class="section-lead section-sublead" data-i18n="portfolio.subintro">Essa posição permite oferecer:</p>
           </div>
 
           <div class="pill-grid">
-            <div class="pill-card reveal">Diversidade qualificada</div>
-            <div class="pill-card reveal">Condições diferenciadas</div>
-            <div class="pill-card reveal">Acesso direto às origens</div>
-            <div class="pill-card reveal">Confiabilidade no fornecimento</div>
+            <div class="pill-card reveal" data-i18n="portfolio.items.0">Diversidade qualificada</div>
+            <div class="pill-card reveal" data-i18n="portfolio.items.1">Condições diferenciadas</div>
+            <div class="pill-card reveal" data-i18n="portfolio.items.2">Acesso direto às origens</div>
+            <div class="pill-card reveal" data-i18n="portfolio.items.3">Confiabilidade no fornecimento</div>
           </div>
         </div>
       </section>
@@ -179,20 +197,19 @@
             <img
               src="https://images.unsplash.com/photo-1759272548457-12b8580bfca7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwyfHxjYXJnbyUyMHNoaXAlMjBjb250YWluZXIlMjBwb3J0JTIwbG9naXN0aWNzfGVufDF8fHx8MTc3NTc0MjQ4Mnww&ixlib=rb-4.1.0&q=80&w=1080"
               alt="Cargo ship at port"
+              data-i18n-attr="alt:images.sourcing"
             />
           </div>
 
           <div class="reveal">
-            <h2>Inteligência na conexão de mercados</h2>
-            <p>
-              A GFP atua como uma plataforma estratégica de sourcing
-              internacional, estruturando operações de exportação de materiais
-              celulósicos produzidos no Brasil para diversos continentes.
+            <h2 data-i18n="sourcing.title">Inteligência na conexão de mercados</h2>
+            <p data-i18n="sourcing.p1">
+              A GFP atua como uma plataforma estratégica de sourcing internacional, estruturando operações de
+              exportação de materiais celulósicos produzidos no Brasil para diversos continentes.
             </p>
-            <p>
-              Por meio de uma abordagem analítica e relacional, promove a
-              integração eficiente entre oferta e demanda global, assegurando
-              fluidez, segurança e consistência nas transações.
+            <p data-i18n="sourcing.p2">
+              Por meio de uma abordagem analítica e relacional, promove a integração eficiente entre oferta e
+              demanda global, assegurando fluidez, segurança e consistência nas transações.
             </p>
           </div>
         </div>
@@ -201,32 +218,36 @@
       <section class="section">
         <div class="container columns-2">
           <article class="border-panel reveal">
-            <h2>Estrutura financeira como diferencial</h2>
-            <p>
-              Por meio de cooperação internacional com empresas coligadas, a
-              GFP oferece soluções estruturadas de financiamento para operações
-              de importação direta.
+            <h2 data-i18n="finance.title">Estrutura financeira como diferencial</h2>
+            <p data-i18n="finance.intro">
+              Por meio de cooperação internacional com empresas coligadas, a GFP oferece soluções estruturadas de
+              financiamento para operações de importação direta.
+            </p>
+            <p class="panel-sublead" data-i18n="finance.subintro">
+              Essa capacidade amplia o acesso a oportunidades comerciais por meio de:
             </p>
             <ul class="bullet-list">
-              <li>Eficiência na alocação de capital</li>
-              <li>Viabilização de operações de maior escala</li>
-              <li>Otimização do fluxo financeiro</li>
-              <li>Maior competitividade para clientes</li>
+              <li data-i18n="finance.items.0">Eficiência na alocação de capital</li>
+              <li data-i18n="finance.items.1">Viabilização de operações de maior escala</li>
+              <li data-i18n="finance.items.2">Otimização do fluxo financeiro</li>
+              <li data-i18n="finance.items.3">Maior competitividade para clientes</li>
             </ul>
           </article>
 
           <article class="border-panel reveal">
-            <h2>Eficiência logística com alcance global</h2>
-            <p>
-              A GFP oferece soluções logísticas completas para transporte
-              marítimo internacional, assegurando eficiência, previsibilidade e
-              controle em todas as etapas da operação.
+            <h2 data-i18n="logistics.title">Eficiência logística com alcance global</h2>
+            <p data-i18n="logistics.intro">
+              A GFP oferece soluções logísticas completas para transporte marítimo internacional, assegurando
+              eficiência, previsibilidade e controle em todas as etapas da operação.
+            </p>
+            <p class="panel-sublead" data-i18n="logistics.subintro">
+              Com uma abordagem coordenada, a empresa administra os fluxos logísticos com precisão, entregando:
             </p>
             <ul class="bullet-list">
-              <li>Otimização de custos de transporte</li>
-              <li>Confiabilidade nos prazos de entrega</li>
-              <li>Gestão eficiente de embarques</li>
-              <li>Integração entre origem e destino</li>
+              <li data-i18n="logistics.items.0">Otimização de custos de transporte</li>
+              <li data-i18n="logistics.items.1">Confiabilidade nos prazos de entrega</li>
+              <li data-i18n="logistics.items.2">Gestão eficiente de embarques</li>
+              <li data-i18n="logistics.items.3">Integração entre origem e destino</li>
             </ul>
           </article>
         </div>
@@ -234,12 +255,14 @@
 
       <section class="section section-muted">
         <div class="container reveal">
-          <h2>Relações que refletem credibilidade</h2>
-          <p class="section-lead narrow">
-            A GFP mantém relações institucionais com empresas reconhecidas
-            globalmente por sua excelência operacional e qualidade de produtos.
-            Essas conexões reforçam seu posicionamento como um elo confiável
-            entre mercados exigentes e altamente competitivos.
+          <h2 data-i18n="partnerships.title">Relações que refletem credibilidade</h2>
+          <p class="section-lead narrow" data-i18n="partnerships.p1">
+            A GFP mantém relações institucionais com empresas reconhecidas globalmente por sua excelência
+            operacional e qualidade de produtos.
+          </p>
+          <p class="section-lead narrow" data-i18n="partnerships.p2">
+            Essas conexões reforçam seu posicionamento como um elo confiável entre mercados exigentes e altamente
+            competitivos.
           </p>
         </div>
       </section>
@@ -247,17 +270,48 @@
       <section class="section" id="diferenciais">
         <div class="container">
           <div class="reveal">
-            <h2>Diferenciais que definem padrão</h2>
+            <h2 data-i18n="differentials.title">Diferenciais que definem padrão</h2>
           </div>
 
           <div class="differentials-grid">
-            <div class="differential-item reveal">Portfólio mais amplo para importação direta no Brasil</div>
-            <div class="differential-item reveal">Atuação global estruturada</div>
-            <div class="differential-item reveal">Soluções completas: comercial, financeira e logística</div>
-            <div class="differential-item reveal">Relacionamento com produtores de referência internacional</div>
-            <div class="differential-item reveal">Capacidade de estruturação financeira</div>
-            <div class="differential-item reveal">Experiência consolidada e visão estratégica</div>
-            <div class="differential-item reveal">Discrição, confiabilidade e precisão operacional</div>
+            <div class="differential-item reveal" data-i18n="differentials.items.0">
+              Portfólio mais amplo para importação direta no Brasil
+            </div>
+            <div class="differential-item reveal" data-i18n="differentials.items.1">Atuação global estruturada</div>
+            <div class="differential-item reveal" data-i18n="differentials.items.2">
+              Soluções completas: comercial, financeira e logística
+            </div>
+            <div class="differential-item reveal" data-i18n="differentials.items.3">
+              Relacionamento com produtores de referência internacional
+            </div>
+            <div class="differential-item reveal" data-i18n="differentials.items.4">
+              Capacidade de estruturação financeira
+            </div>
+            <div class="differential-item reveal" data-i18n="differentials.items.5">
+              Experiência consolidada e visão estratégica
+            </div>
+            <div class="differential-item reveal" data-i18n="differentials.items.6">
+              Discrição, confiabilidade e precisão operacional
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section founder-section">
+        <div class="container split-grid founder-grid">
+          <div class="reveal founder-card">
+            <p class="founder-label" data-i18n="founder.label">Nome em destaque:</p>
+            <h2 class="founder-name" data-i18n="founder.name">Glauco Affonso</h2>
+            <p data-i18n="founder.text">
+              Com mais de 30 anos de experiência no setor de papel e celulose, Glauco Affonso construiu sua
+              trajetória em empresas multinacionais de referência global, como Stora Enso, Suzano e Klabin. Sua
+              experiência internacional e profundo conhecimento de mercado orientam a atuação da GFP, assegurando
+              decisões estratégicas consistentes e relações comerciais de alto nível.
+            </p>
+          </div>
+
+          <div class="reveal founder-image media-frame">
+            <img src="./FOTOGLAUCO.png" alt="Glauco Affonso" />
           </div>
         </div>
       </section>
@@ -267,16 +321,16 @@
           <img
             src="https://images.unsplash.com/photo-1592912856915-bad0031bd105?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHw0fHxmb3Jlc3QlMjBwaW5lJTIwdHJlZXMlMjBhZXJpYWwlMjBzdXN0YWluYWJsZXxlbnwxfHx8fDE3NzU3NDI0ODN8MA&ixlib=rb-4.1.0&q=80&w=1080"
             alt="Forest"
+            data-i18n-attr="alt:images.contact"
           />
         </div>
         <div class="container contact-inner reveal">
-          <h2>Relações que constroem valor</h2>
-          <p>
-            A GFP atua com foco na construção de relações comerciais sólidas e
-            duradouras, conectando empresas a oportunidades consistentes no
-            mercado global de papel e celulose.
+          <h2 data-i18n="closing.title">Relações que constroem valor</h2>
+          <p data-i18n="closing.text">
+            A GFP atua com foco na construção de relações comerciais sólidas e duradouras, conectando empresas a
+            oportunidades consistentes no mercado global de papel e celulose.
           </p>
-          <a class="button button-light button-large" href="mailto:contato@gfpgoldforest.com">
+          <a class="button button-light button-large" href="mailto:glauco@gfpbrasil.com.br" data-i18n="closing.cta">
             Entre em contato
           </a>
         </div>
@@ -286,10 +340,9 @@
     <footer class="site-footer">
       <div class="container footer-inner">
         <div class="brand footer-brand">
-          <span class="brand-mark" aria-hidden="true"></span>
-          <span class="brand-text">GFP GoldForest</span>
+          <img class="brand-logo footer-logo" src="./logo.png" alt="GFP GoldForest Products logo" />
         </div>
-        <p>© 2026 GFP GoldForest Negócios e Representações Ltda. Todos os direitos reservados.</p>
+        <p data-i18n="footer">© 2026 GFP GoldForest Negócios e Representações Ltda. Todos os direitos reservados.</p>
       </div>
     </footer>
 
