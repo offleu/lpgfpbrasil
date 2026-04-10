@@ -11,7 +11,7 @@ const translations = {
       contact: "Fale com a GFP"
     },
     hero: {
-      title: "Excelência Global em Papel, Celulose e Fibras de Madeira",
+      title: "Especialista no fornecimento global de papel, celulose, fibras de madeira e aparas",
       subtitle:
         "Conectando o mercado brasileiro aos mais seletos produtores internacionais, com inteligência comercial, solidez e precisão.",
       cta: "Fale com a GFP"
@@ -52,7 +52,7 @@ const translations = {
     },
     sourcing: {
       title: "Inteligência na conexão de mercados",
-      p1: "A GFP atua como uma plataforma estratégica de sourcing internacional, estruturando operações de exportação de materiais celulósicos produzidos no Brasil para diversos continentes.",
+      p1: "A GFP atua com inteligência de mercado e sourcing internacional, estruturando operações de importação e exportação de matérias-primas e produtos do setor de papel, celulose, fibras de madeira e aparas.",
       p2: "Por meio de uma abordagem analítica e relacional, promove a integração eficiente entre oferta e demanda global, assegurando fluidez, segurança e consistência nas transações."
     },
     finance: {
@@ -99,7 +99,7 @@ const translations = {
     founder: {
       label: "Nome em destaque:",
       name: "Glauco Affonso",
-      text: "Com mais de 30 anos de experiência no setor de papel e celulose, Glauco Affonso construiu sua trajetória em empresas multinacionais de referência global, como Stora Enso, Suzano e Klabin. Sua experiência internacional e profundo conhecimento de mercado orientam a atuação da GFP, assegurando decisões estratégicas consistentes e relações comerciais de alto nível."
+      text: "Com mais de 30 anos de experiência no setor de papel e celulose, Glauco Affonso construiu sua trajetória em empresas multinacionais de referência global no Brasil e Europa. Sua experiência internacional e profundo conhecimento de mercado orientam a atuação da GFP, assegurando decisões estratégicas consistentes e relações comerciais de alto nível."
     },
     closing: {
       title: "Relações que constroem valor",
@@ -108,9 +108,9 @@ const translations = {
     },
     footer: "© 2026 GFP GoldForest Negócios e Representações Ltda. Todos os direitos reservados.",
     images: {
-      hero: "Vista aérea de floresta",
+      hero: "Vista aérea de floresta plantada",
       foundation: "Vista aérea de complexo industrial",
-      sourcing: "Navio cargueiro no porto",
+      sourcing: "Operação de embarque de celulose",
       founder: "Reunião executiva de negócios",
       contact: "Floresta"
     }
@@ -127,7 +127,7 @@ const translations = {
       contact: "Contact GFP"
     },
     hero: {
-      title: "Global Excellence in Paper, Pulp and Wood Fiber Solutions",
+      title: "Specialist in the global supply of paper, pulp, wood fibers and recovered fiber",
       subtitle:
         "Connecting the Brazilian market to the world’s most selective producers with commercial intelligence, solidity and precision.",
       cta: "Contact GFP"
@@ -168,7 +168,7 @@ const translations = {
     },
     sourcing: {
       title: "Intelligence in connecting markets",
-      p1: "GFP acts as a strategic international sourcing platform, structuring export operations for Brazilian pulp-based materials to multiple continents.",
+      p1: "GFP combines market intelligence and international sourcing to structure import and export operations for raw materials and products in paper, pulp, wood fibers and recovered fiber.",
       p2: "Through an analytical and relationship-driven approach, the company efficiently connects supply and demand, ensuring consistency, security and operational fluidity."
     },
     finance: {
@@ -214,7 +214,7 @@ const translations = {
     founder: {
       label: "Name:",
       name: "Glauco Affonso",
-      text: "With over 30 years of experience in the pulp and paper industry, Glauco Affonso has built his career within globally recognized companies such as Stora Enso, Suzano and Klabin. His international background and deep market expertise guide GFP’s strategic direction, ensuring consistency, reliability and high-level business relationships."
+      text: "With over 30 years of experience in the pulp and paper industry, Glauco Affonso has built his career within globally recognized multinational companies in Brazil and Europe. His international background and deep market expertise guide GFP’s strategic direction, ensuring consistency, reliability and high-level business relationships."
     },
     closing: {
       title: "Building value through relationships",
@@ -223,9 +223,9 @@ const translations = {
     },
     footer: "© 2026 GFP GoldForest Negócios e Representações Ltda. All rights reserved.",
     images: {
-      hero: "Aerial forest view",
+      hero: "Aerial view of planted forest",
       foundation: "Aerial industrial complex view",
-      sourcing: "Cargo ship at port",
+      sourcing: "Pulp cargo loading operation",
       founder: "Executive business meeting",
       contact: "Forest"
     }
