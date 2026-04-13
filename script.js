@@ -111,6 +111,7 @@ const translations = {
       hero: "Vista aérea de floresta plantada",
       foundation: "Vista aérea de complexo industrial",
       sourcing: "Operação de embarque de celulose",
+      logistics: "Navio cargueiro em operação portuária",
       founder: "Reunião executiva de negócios",
       contact: "Floresta"
     }
@@ -226,6 +227,7 @@ const translations = {
       hero: "Aerial view of planted forest",
       foundation: "Aerial industrial complex view",
       sourcing: "Pulp cargo loading operation",
+      logistics: "Cargo ship at port",
       founder: "Executive business meeting",
       contact: "Forest"
     }
