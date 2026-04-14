@@ -7,6 +7,9 @@
       content="Connects Brazilian markets with global producers in paper and cellulose through integrated commercial, financial, and logistical solutions for seamless trade."
     />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="./logo.png" />
+    <link rel="shortcut icon" href="./logo.png" />
+    <link rel="apple-touch-icon" href="./logo.png" />
     <title>GFP GoldForest Negócios e Representações Ltda</title>
     <link rel="preconnect" href="https://images.unsplash.com" />
     <link rel="stylesheet" href="./styles.css" />
@@ -342,9 +345,77 @@
             A GFP atua com foco na construção de relações comerciais sólidas e duradouras, conectando empresas a
             oportunidades consistentes no mercado global de papel e celulose.
           </p>
-          <a class="button button-light button-large" href="mailto:glauco@gfpbrasil.com.br" data-i18n="closing.cta">
-            Entre em contato
-          </a>
+          <form
+            class="contact-form"
+            id="contact-form"
+            data-whatsapp="+5548991557202"
+          >
+            <div class="contact-form-grid">
+              <label class="contact-field">
+                <span data-i18n="contactForm.nameLabel">Nome</span>
+                <input
+                  type="text"
+                  name="name"
+                  required
+                  autocomplete="name"
+                  data-i18n-attr="placeholder:contactForm.namePlaceholder"
+                  placeholder="Seu nome"
+                />
+              </label>
+
+              <label class="contact-field">
+                <span data-i18n="contactForm.emailLabel">E-mail</span>
+                <input
+                  type="email"
+                  name="email"
+                  required
+                  autocomplete="email"
+                  data-i18n-attr="placeholder:contactForm.emailPlaceholder"
+                  placeholder="seuemail@empresa.com"
+                />
+              </label>
+
+              <label class="contact-field">
+                <span data-i18n="contactForm.phoneLabel">Telefone</span>
+                <input
+                  type="tel"
+                  name="phone"
+                  autocomplete="tel"
+                  data-i18n-attr="placeholder:contactForm.phonePlaceholder"
+                  placeholder="+55 (00) 00000-0000"
+                />
+              </label>
+
+              <label class="contact-field">
+                <span data-i18n="contactForm.companyLabel">Empresa</span>
+                <input
+                  type="text"
+                  name="company"
+                  autocomplete="organization"
+                  data-i18n-attr="placeholder:contactForm.companyPlaceholder"
+                  placeholder="Nome da empresa"
+                />
+              </label>
+            </div>
+
+            <label class="contact-field contact-field-message">
+              <span data-i18n="contactForm.messageLabel">Mensagem</span>
+              <textarea
+                name="message"
+                required
+                rows="6"
+                data-i18n-attr="placeholder:contactForm.messagePlaceholder"
+                placeholder="Escreva sua mensagem"
+              ></textarea>
+            </label>
+
+            <button class="button button-light button-large contact-submit" type="submit" data-i18n="contactForm.submit">
+              Enviar mensagem
+            </button>
+
+            <p class="contact-form-note" data-i18n="contactForm.note">
+            </p>
+          </form>
         </div>
       </section>
     </main>
@@ -355,6 +426,25 @@
           <img class="brand-logo footer-logo" src="./logo.png" alt="GFP GoldForest Products logo" />
         </div>
         <div class="footer-copy">
+  
+          <div class="footer-contacts" aria-label="Contatos GFP Brasil">
+            <a class="footer-contact-link" href="mailto:contato@gfpbrasil.com.br" aria-label="Enviar e-mail para contato@gfpbrasil.com.br">
+              <span class="footer-contact-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" focusable="false">
+                  <path d="M3 6.75A1.75 1.75 0 0 1 4.75 5h14.5A1.75 1.75 0 0 1 21 6.75v10.5A1.75 1.75 0 0 1 19.25 19H4.75A1.75 1.75 0 0 1 3 17.25V6.75Zm1.5.34v.12l7.23 5.43a.5.5 0 0 0 .54 0L19.5 7.21v-.12a.25.25 0 0 0-.25-.25H4.75a.25.25 0 0 0-.25.25Zm15 1.99-6.33 4.75a2 2 0 0 1-2.34 0L4.5 9.08v8.17c0 .14.11.25.25.25h14.5a.25.25 0 0 0 .25-.25V9.08Z"></path>
+                </svg>
+              </span>
+              <span>contato@gfpbrasil.com.br</span>
+            </a>
+            <a class="footer-contact-link" href="https://wa.me/5548991557202" target="_blank" rel="noreferrer" aria-label="Abrir conversa no WhatsApp para +55 48 99155-7202">
+              <span class="footer-contact-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" focusable="false">
+                  <path d="M12 2.25A9.75 9.75 0 0 0 3.6 17.95L2.3 21.7l3.87-1.24A9.75 9.75 0 1 0 12 2.25Zm0 18a8.2 8.2 0 0 1-4.18-1.14l-.3-.18-2.3.74.77-2.23-.2-.31A8.25 8.25 0 1 1 12 20.25Zm4.58-6.2c-.25-.12-1.47-.72-1.7-.8-.22-.08-.38-.12-.55.13-.17.25-.63.8-.78.96-.14.17-.29.19-.54.07-.25-.12-1.03-.38-1.97-1.22-.73-.65-1.22-1.45-1.36-1.7-.14-.25-.02-.39.1-.5.1-.1.25-.29.37-.43.12-.15.17-.25.25-.42.08-.17.04-.3-.02-.43-.06-.12-.55-1.33-.76-1.82-.2-.48-.4-.42-.55-.43h-.46c-.17 0-.43.06-.66.3-.22.25-.86.84-.86 2.04 0 1.2.88 2.37 1 2.53.13.17 1.7 2.6 4.11 3.64.57.25 1.02.4 1.37.52.57.18 1.08.15 1.49.09.46-.07 1.47-.6 1.68-1.18.21-.58.21-1.07.15-1.17-.06-.1-.22-.16-.47-.28Z"></path>
+                </svg>
+              </span>
+              <span>+55 (48) 99155-7202</span>
+            </a>
+          </div>
           <p data-i18n="footer">© 2026 GFP GoldForest Negócios e Representações Ltda. Todos os direitos reservados.</p>
           <p class="footer-legal">
             CNPJ: 14.083.796/0001-06<br />

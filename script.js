@@ -106,6 +106,20 @@ const translations = {
       text: "A GFP atua com foco na construção de relações comerciais sólidas e duradouras, conectando empresas a oportunidades consistentes no mercado global de papel e celulose.",
       cta: "Entre em contato"
     },
+    contactForm: {
+      nameLabel: "Nome",
+      namePlaceholder: "Seu nome",
+      emailLabel: "E-mail",
+      emailPlaceholder: "seuemail@empresa.com",
+      phoneLabel: "Telefone",
+      phonePlaceholder: "+55 (00) 00000-0000",
+      companyLabel: "Empresa",
+      companyPlaceholder: "Nome da empresa",
+      messageLabel: "Mensagem",
+      messagePlaceholder: "Escreva sua mensagem",
+      submit: "Enviar no WhatsApp",
+      note: "Ao clicar em enviar, o WhatsApp abre com a mensagem estruturada e pronta para envio."
+    },
     footer: "© 2026 GFP GoldForest Negócios e Representações Ltda. Todos os direitos reservados.",
     images: {
       hero: "Vista aérea de floresta plantada",
@@ -222,6 +236,20 @@ const translations = {
       text: "GFP is committed to developing solid and long-term business relationships, connecting companies to consistent opportunities in the global pulp and paper market.",
       cta: "Get in touch"
     },
+    contactForm: {
+      nameLabel: "Name",
+      namePlaceholder: "Your name",
+      emailLabel: "Email",
+      emailPlaceholder: "yourname@company.com",
+      phoneLabel: "Phone",
+      phonePlaceholder: "+55 (00) 00000-0000",
+      companyLabel: "Company",
+      companyPlaceholder: "Company name",
+      messageLabel: "Message",
+      messagePlaceholder: "Write your message",
+      submit: "Send via WhatsApp",
+      note: "When you click send, WhatsApp opens with a structured message ready to send."
+    },
     footer: "© 2026 GFP GoldForest Negócios e Representações Ltda. All rights reserved.",
     images: {
       hero: "Aerial view of planted forest",
@@ -240,6 +268,7 @@ const mobileLinks = document.querySelectorAll(".mobile-nav a");
 const revealItems = document.querySelectorAll(".reveal");
 const parallaxTarget = document.querySelector("[data-parallax]");
 const langButtons = document.querySelectorAll(".lang-btn");
+const contactForm = document.querySelector("#contact-form");
 
 const getValue = (source, path) =>
   path.split(".").reduce((current, key) => {
@@ -338,6 +367,50 @@ const updateParallax = () => {
   parallaxTarget.style.transform = `translateY(${offset}px)`;
   parallaxTarget.style.opacity = opacity.toFixed(3);
 };
+
+if (contactForm) {
+  contactForm.addEventListener("submit", (event) => {
+    event.preventDefault();
+
+    const formData = new FormData(contactForm);
+    const currentLanguage = window.localStorage.getItem("gfp-language") || "pt";
+    const isPortuguese = currentLanguage === "pt";
+    const whatsappNumber = (contactForm.dataset.whatsapp || "").replace(/\D/g, "");
+
+    const name = String(formData.get("name") || "").trim();
+    const email = String(formData.get("email") || "").trim();
+    const phone = String(formData.get("phone") || "").trim();
+    const company = String(formData.get("company") || "").trim();
+    const message = String(formData.get("message") || "").trim();
+
+    const lines = isPortuguese
+      ? [
+          "Olá, equipe GFP. Gostaria de entrar em contato.",
+          "",
+          `Nome: ${name}`,
+          `Empresa: ${company || "Não informado"}`,
+          `E-mail: ${email}`,
+          `Telefone: ${phone || "Não informado"}`,
+          "",
+          "Mensagem:",
+          message
+        ]
+      : [
+          "Hello, GFP team. I would like to get in touch.",
+          "",
+          `Name: ${name}`,
+          `Company: ${company || "Not provided"}`,
+          `Email: ${email}`,
+          `Phone: ${phone || "Not provided"}`,
+          "",
+          "Message:",
+          message
+        ];
+
+    const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(lines.join("\n"))}`;
+    window.open(whatsappUrl, "_blank", "noopener");
+  });
+}
 
 applyLanguage(window.localStorage.getItem("gfp-language") || "pt");
 updateParallax();
