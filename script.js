@@ -269,6 +269,7 @@ const revealItems = document.querySelectorAll(".reveal");
 const parallaxTarget = document.querySelector("[data-parallax]");
 const langButtons = document.querySelectorAll(".lang-btn");
 const contactForm = document.querySelector("#contact-form");
+let currentLanguage = "en";
 
 const getValue = (source, path) =>
   path.split(".").reduce((current, key) => {
@@ -279,6 +280,7 @@ const getValue = (source, path) =>
 
 const applyLanguage = (lang) => {
   const copy = translations[lang] || translations.pt;
+  currentLanguage = lang in translations ? lang : "en";
 
   document.documentElement.lang = copy.htmlLang;
   document.title = copy.pageTitle;
@@ -304,10 +306,8 @@ const applyLanguage = (lang) => {
   }
 
   langButtons.forEach((button) => {
-    button.classList.toggle("is-active", button.dataset.lang === lang);
+    button.classList.toggle("is-active", button.dataset.lang === currentLanguage);
   });
-
-  window.localStorage.setItem("gfp-language", lang);
 };
 
 if (menuToggle && mobileNav) {
@@ -316,7 +316,6 @@ if (menuToggle && mobileNav) {
     menuToggle.classList.toggle("is-open", isOpen);
     menuToggle.setAttribute("aria-expanded", String(isOpen));
 
-    const currentLanguage = window.localStorage.getItem("gfp-language") || "pt";
     menuToggle.setAttribute(
       "aria-label",
       isOpen ? translations[currentLanguage].menuAriaClose : translations[currentLanguage].menuAriaOpen
@@ -329,7 +328,6 @@ if (menuToggle && mobileNav) {
       menuToggle.classList.remove("is-open");
       menuToggle.setAttribute("aria-expanded", "false");
 
-      const currentLanguage = window.localStorage.getItem("gfp-language") || "pt";
       menuToggle.setAttribute("aria-label", translations[currentLanguage].menuAriaOpen);
     });
   });
@@ -337,7 +335,7 @@ if (menuToggle && mobileNav) {
 
 langButtons.forEach((button) => {
   button.addEventListener("click", () => {
-    applyLanguage(button.dataset.lang || "pt");
+    applyLanguage(button.dataset.lang || "en");
   });
 });
 
@@ -373,7 +371,6 @@ if (contactForm) {
     event.preventDefault();
 
     const formData = new FormData(contactForm);
-    const currentLanguage = window.localStorage.getItem("gfp-language") || "pt";
     const isPortuguese = currentLanguage === "pt";
     const whatsappNumber = (contactForm.dataset.whatsapp || "").replace(/\D/g, "");
 
@@ -412,6 +409,6 @@ if (contactForm) {
   });
 }
 
-applyLanguage(window.localStorage.getItem("gfp-language") || "pt");
+applyLanguage("en");
 updateParallax();
 window.addEventListener("scroll", updateParallax, { passive: true });
